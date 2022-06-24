@@ -1,39 +1,10 @@
 import React, { useState } from "react";
 import { authService, firebaseInstance } from "../fbase";
+import { BrowserRouter, Route } from "react-router-dom";
 import "./Auth.modules.css";
 
 const Auth = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
   const [newAccount, setNewAccount] = useState(true);
-  const [error, setError] = useState("");
-  const onChange = (event: any) => {
-    const {
-      target: { name, value },
-    } = event;
-    if (name === "email") {
-      setEmail(value);
-    } else if (name === "password") {
-      setPassword(value);
-    }
-  };
-  const onSubmit = async (event: any) => {
-    event.preventDefault();
-    try {
-      let data;
-      if (newAccount) {
-        data = await authService.createUserWithEmailAndPassword(
-          email,
-          password
-        );
-      } else {
-        data = await authService.signInWithEmailAndPassword(email, password);
-      }
-      console.log(data);
-    } catch (error: any) {
-      setError(error.message);
-    }
-  };
   const toggleAccount = () => setNewAccount((prev) => !prev);
   const onSocialClick = async () => {
     let provider = new firebaseInstance.auth.GoogleAuthProvider();
@@ -46,37 +17,12 @@ const Auth = () => {
       <div className="v9_57"></div>
       <div className="v17_108"></div>
       <span className="v9_64">안녕하세요</span>
-      <span className="v9_66">토이 클래스에 오신 것을 환영합니다!</span>
-      <div className="v9_58">
-        <form onSubmit={onSubmit}>
-          <input
-            name="email"
-            type="email"
-            placeholder="Email"
-            required
-            value={email}
-            onChange={onChange}
-          />
-          <input
-            name="password"
-            type="password"
-            placeholder="Password"
-            required
-            value={password}
-            onChange={onChange}
-          />
-          <input
-            type="submit"
-            value={newAccount ? "Create Account" : "Sign In"}
-          />
-          {error}
-        </form>
-        <span onClick={toggleAccount}>
-          {newAccount ? "Sign In" : "Create Account"}
-        </span>
-      </div>
+      <span className="v9_66">토이 클래스에 오신 것을</span>
+      <span className="v9_67"> 환영합니다!</span>
+      <div className="v9_58"></div>
       <span className="v9_59">회원 가입하고 토이 만들기</span>
       <div className="v9_61"></div>
+      <div className="v105_48"></div>
       <span className="v9_62" onClick={onSocialClick}>
         구글 계정으로 로그인
       </span>

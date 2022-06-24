@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import { storageService, dbService } from "../fbase";
 import { useNavigate } from "react-router-dom";
+import "./Create.css";
 
 const Create = (props) => {
   const [post, setPost] = useState("");
@@ -58,6 +59,7 @@ const Create = (props) => {
   };
   const onClearAttachment = () => setAttachment(null);
   return (
+    /*
     <>
       <form onSubmit={onSubmit}>
         <input
@@ -117,6 +119,35 @@ const Create = (props) => {
         )}
       </form>
     </>
+    */
+    <div className="v145_156">
+      <div className="v145_159"></div>
+      <div class="v145_171"></div>
+      <span class="v145_172">확인</span>
+      <span class="v145_173">토이 네임</span>
+      <div class="v145_174"></div>
+      <span class="v145_175">용용이</span>
+      <div class="v145_188"></div>
+      <span class="v145_189">업로드</span>
+      <span class="v145_190">토이 사진</span>
+      <div class="v145_191"></div>
+      <span class="v145_192">upload image</span>
+      <span class="v145_235">토이 설정하기</span>
+      <div class="v145_226"></div>
+      <span class="v145_227">활발하다</span>
+      <div class="v145_228"></div>
+      <span class="v145_229">다정하다</span>
+      <div class="v145_230"></div>
+      <span class="v145_231">차분하다</span>
+      <div class="v145_232"></div>
+      <span class="v145_233">시원하다</span>
+      <span class="v145_234">
+        용용이를 가장 잘 나타내는 성격 키워드를 골라주세요
+      </span>
+      <span class="v145_225">토이 성격 설정하기</span>
+      <div class="v145_207"></div>
+      <span class="v145_208">완성</span>
+    </div>
   );
 };
 

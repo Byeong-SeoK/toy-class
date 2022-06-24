@@ -1,0 +1,64 @@
+/*메인 페이지 & 부가 기능 공통 CSS*/
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+}
+.v106_69 {
+  width: 744px;
+  height: 1133px;
+  background: linear-gradient(
+    rgba(255, 247, 205, 1) 42%,
+    rgba(255, 204, 253),
+    rgba(217, 204, 255, 1)
+  );
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+/*배경*/
+
+.v106_70 {
+  width: 170px;
+  color: rgba(71, 65, 143, 1);
+  position: absolute;
+  top: 64px;
+  left: 287px;
+  font-family: Inter;
+  font-weight: Bold;
+  font-size: 48px;
+  opacity: 1;
+  text-align: center;
+}
+/*가운데 메뉴 이름*/
+
+.v106_103 {
+  width: 95px;
+  height: 95px;
+  background: rgba(83, 77, 151, 1);
+  opacity: 1;
+  position: absolute;
+  top: 36px;
+  left: 40px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/*뒤로 가기 버튼*/
+
+.v106_104 {
+  width: 40px; /* 사이즈 */
+  height: 40px; /* 사이즈 */
+  background: rgba(83, 77, 151, 1);
+  opacity: 1;
+  position: absolute;
+  top: 64px;
+  left: 74px;
+  border-top: 9px solid rgba(255, 255, 255, 1); /* 선 두께 */
+  border-right: 9px solid rgba(255, 255, 255, 1); /* 선 두께 */
+  transform: rotate(225deg); /* 각도 */
+}
+/*뒤로 가기 버튼 화살표*/
