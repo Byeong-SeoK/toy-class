@@ -47,7 +47,7 @@
 </table>
 
 
-<b>## Result</b>
+## Result
 > '클라썸' 후원기업상 수상
 
 ## License
