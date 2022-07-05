@@ -46,5 +46,8 @@
   </tr>
 </table>
 
+##Result
+> '클라썸'  수상
+
 ## License
 [MIT](https://github.com/Noriter/toy-class/blob/main/LICENSE)
